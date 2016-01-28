@@ -1,0 +1,191 @@
+source,target,value
+culture,art/science,4.25
+culture,éducation,0.8
+culture,économie,0.1
+culture,droit,0.1
+culture,maker,0.4
+culture,littérature,0.45
+culture,biotech,0.3
+vie de campus,jeux vidéo,0.2
+vie de campus,musique,2.3
+vie de campus,théâtre,2.45
+vie de campus,culture,1.2
+vie de campus,droit,0.1
+vie de campus,art/science,4.35
+vie de campus,Celebration,0.4
+vie de campus,célébration,7.3
+vie de campus,physique,0.6
+vie de campus,littérature,0.35
+vie de campus,cérémonie,2
+vie de campus,networking,1.5
+vie de campus,démo,1.5
+vie de campus,maker,1.2
+vie de campus,science/société,1.2
+vie de campus,tech,0.35
+vie de campus,ess,0.35
+startup,ess,0.1
+startup,tech,2.65
+startup,datascience,1.05
+startup,électronique,1.05
+startup,business,3.02
+startup,spacial,0.15
+startup,éducation,1.65
+startup,design,0.5
+startup,open hardware,0.3
+startup,maker,0.3
+startup,soft skills,1.72
+startup,urbanisme,0.2
+startup,ville,0.15
+startup,mobilité,0.45
+startup, éducation,0.4
+startup,végétal,0.3
+startup,associations,0.2
+startup,Journalisme ,0.5
+startup,économie,0.3
+recherche,open science,4.05
+recherche,insertion,0.35
+recherche,IHM,0.35
+recherche,datascience,2.6
+recherche,biologie,1.15
+recherche,électronique,0.35
+recherche,nanotech,0.8
+recherche,mathématiques,0.9
+recherche,code,1.6
+éducation,orientation,0.95
+éducation,droit,0.1
+éducation,art/science,0.1
+éducation,startup,2.47
+éducation,game design,2.1
+éducation,jeux videos,2.1
+éducation,open source,0.15
+éducation,tech,0.6
+éducation,business,0.57
+éducation,open science,0.04
+éducation,soft skills,0.3
+éducation,mathématiques,0.11
+éducation,économie,0.3
+économie,startup,9.39
+économie,tech,3.8
+économie,datascience,1.05
+économie,électronique,1.05
+économie,business,3.37
+économie,spacial,0.15
+économie,éducation,2.42
+économie,entrepreneurs,0.1
+économie,design,1
+économie,management,0.15
+économie,ville,0.75
+économie,urbanisme,0.8
+économie,co-développement,0.3
+économie,ess,0.65
+économie,consommation collaborative,0.3
+économie,open hardware,0.3
+économie,maker,0.3
+économie,soft skills,1.42
+économie,prospective ,0.1
+économie,mobilités,0.2
+économie,prospective,0.62
+économie,vie de campus,0.47
+économie,recherche,0.1
+économie,stratégie,0.45
+économie,mobilité,0.15
+économie, éducation,0.4
+économie,art/science,0.35
+économie,Journalisme ,0.5
+tech,datascience,1.05
+tech,électronique,1.05
+tech,startup,1.4
+tech,business,1.4
+tech,ess,0.35
+tech,art/science,0.35
+datascience,électronique,1.05
+datascience,open science,2.6
+datascience,code,0.7
+maker,fablab,0.4
+maker,labs,0.5
+maker,code,2.74
+maker,culture,0.1
+maker,python,0.15
+maker,célébration,0.1
+maker,ardunio,1.36
+maker,éducation,0.3
+maker,électronique,0.63
+maker,design,0.06
+maker,ihm,0.06
+maker,science/société,1.2
+maker,agriculture urbaine,0.2
+maker,startup,0.2
+maker,végétal,0.2
+maker,associations,0.2
+fablab,labs,0.4
+ville,urbanisme,5.12
+ville,agriculture,0.3
+ville,architecture,1.91
+ville,numérique,0.8
+ville,startup,0.66
+ville,maker,0.22
+ville,économie,0.55
+ville,mobilités,0.2
+ville,design,0.06
+ville,Vélo,0
+ville,mobilité,0.15
+ville,agriculture urbaine,0.1
+ville,végétal,0.1
+ville,consultation,0.1
+urbanisme,agriculture,0.3
+urbanisme,architecture,1.6
+urbanisme,startup,0.36
+urbanisme,maker,0.16
+urbanisme,économie,0.2
+urbanisme,mobilités,0.2
+urbanisme,consultation,0.1
+droit,art/science,0.2
+spacial,éducation,0.15
+art/science,éducation,0.8
+art/science,maker,1.6
+art/science,littérature,0.1
+art/science,physique,0.6
+art/science,biotech,0.3
+art/science,science/société,1.2
+numérique,urbanisme,0.8
+numérique,game design,0.3
+game design,jeux videos,2.1
+insertion,IHM,0.35
+labs,culture,0.1
+code,python,0.15
+code,célébration,0.1
+code,ardunio,1.36
+ess,consommation collaborative,0.3
+ess,art/science,0.35
+design,éducation,0.5
+biologie,électronique,0.1
+biologie,nanotech,0.8
+open hardware,maker,0.3
+open hardware,éducation,0.3
+électronique,biologie,0.25
+électronique,code,0.63
+architecture,économie,0.15
+architecture,maker,0.06
+architecture,design,0.06
+architecture,agriculture urbaine,0.1
+architecture,startup,0.1
+architecture,végétal,0.1
+prospective,vie de campus,0.12
+prospective,recherche,0.1
+prospective,stratégie,0.1
+Vélo,mobilité,0
+Vélo,urbanisme,0
+mobilité,urbanisme,0
+cérémonie,networking,1.5
+cérémonie,démo,1.5
+networking,démo,1.5
+business,stratégie,0.35
+théâtre,art/science,0.45
+open science,mathématiques,0.9
+open science,code,1.6
+mathématiques,code,0.9
+agriculture urbaine,startup,0.3
+agriculture urbaine,végétal,0.3
+agriculture urbaine,associations,0.2
+végétal,associations,0.2
+sport,vie de campus,0.2
