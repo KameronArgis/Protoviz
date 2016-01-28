@@ -1,0 +1,29 @@
+
+path.link {
+	fill: none;
+	stroke: #c66;
+	stroke-width: 1.5px;
+}
+path.link.twofive {
+	opacity: 0.15;
+}
+path.link.fivezero {
+	opacity: 0.50;
+}
+path.link.sevenfive {
+	opacity: 0.75;
+}
+path.link.onezerozero {
+	opacity: 1.0;
+	stroke-width: 3.5px;
+}
+circle {
+	fill: #ccc;
+	stroke: #fff;
+	stroke-width: 1.5px;
+}
+text {
+	fill: #000;
+	font: 10px sans-serif;
+	pointer-events: none;
+}
