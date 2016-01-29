@@ -4,7 +4,8 @@
 	<meta charset="utf-8">
 	<title>PROTOVIZ JS - graphe Public > Public</title>
 	<link rel="stylesheet" href="/protoviz-js/style.css">
-        <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	<link rel="stylesheet" href="graphe_visites.css">
+    <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
 </head>
 <body> <!--
 	<header><h1>PROTO204 DAVATIZ</h1>
@@ -82,10 +83,12 @@ var path = svg.append("svg:g").selectAll("path")
     .attr("class", function(d) { return "link " + d.type; })
     .attr("marker-end", "url(#end)");
 
-// CSV vers noeuds
+// Append des noeuds
 var node = svg.selectAll(".node")
     .data(force.nodes())
   .enter().append("g")
+  
+  
     .attr("class", "node")
     .on("click", click)
     .on("dblclick", dblclick)
