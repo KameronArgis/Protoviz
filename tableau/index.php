@@ -1,10 +1,13 @@
 ﻿<?php
+
+/* Ce fichier sert à générer le fichier de données necessaire à l'affichage du graphique. */
+
 setlocale (LC_TIME, 'fr_FR.utf8','fra'); 
 
-require_once '../PHPExcel/IOFactory.php';
+require_once '../vendor/PHPExcel/IOFactory.php';
 
 // Chargement du fichier Excel
-$objPHPExcel = PHPExcel_IOFactory::load("../dataviz.xlsx");
+$objPHPExcel = PHPExcel_IOFactory::load("../data/dataviz.xlsx");
  
 // Parsage du fichier
 $sheet = $objPHPExcel->getSheet(0);

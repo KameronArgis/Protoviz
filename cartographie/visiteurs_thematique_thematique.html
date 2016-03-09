@@ -1,13 +1,14 @@
 <!doctype html>
 <html lang="fr">
 <head>
-	<meta charset="utf-8">
-	<title>PROTOVIZ JS - graphe Public > Public</title>
-	<link rel="stylesheet" href="/protoviz-js/style.css">
-	<link rel="stylesheet" href="graphe_visites.css">
+    <meta charset="utf-8">
+    <title>PROTOVIZ JS - graphe Public > Public</title>
+    <link rel="stylesheet" href="/protoviz-js/style.css">
+    <link rel="stylesheet" href="graphe_visites.css">
+    <script type="text/javascript" src="utils.js"></script>
     <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
 </head>
-<body> <!--
+<!--
 	<header><h1>PROTO204 DAVATIZ</h1>
         <center id="sous_titre">100% JS !</center></header>
         
@@ -16,9 +17,8 @@
             La couleur de la flèche donne l\intensité des visites d\'un certain type de public à une catégorie d\'évènement.
 	</p>
 -->
-        <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
-        
+<body> 
 <script>
 
 // Import du .CSV
@@ -128,15 +128,19 @@ function click() {
     d3.select(this).select("text").transition()
         .duration(750)
         .attr("x", 22)
-        .style("fill", "steelblue")
-        .style("stroke", "lightsteelblue")
+        .style("fill", "black")
+        .style("stroke", "black")
         .style("stroke-width", ".5px")
         .style("font", "20px sans-serif");
     d3.select(this).select("circle").transition()
         .duration(750)
         .attr("r", 16)
         .style("fill", "lightsteelblue");
+
+        // Colore les liens du noeud en bleu
+        path = getLinks(this, links, path, true);
 }
+
 
 // 
 function dblclick() {
