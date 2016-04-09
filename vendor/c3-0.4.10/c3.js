@@ -175,6 +175,7 @@
     };
 
     c3_chart_internal_fn.initWithData = function (data) {
+        console.log(data);
         var $$ = this, d3 = $$.d3, config = $$.config;
         var defs, main, binding = true;
 
@@ -203,6 +204,7 @@
         // Init data as targets
         $$.data.xs = {};
         $$.data.targets = $$.convertDataToTargets(data);
+        console.log($$.data.targets);
 
         if (config.data_filter) {
             $$.data.targets = $$.data.targets.filter(config.data_filter);
@@ -2037,7 +2039,7 @@
             ids = $$.d3.keys(data[0]).filter($$.isNotX, $$),
             xs = $$.d3.keys(data[0]).filter($$.isX, $$),
             targets;
-
+            console.log($$.d3.keys(data[0]));
         // save x for update data by load when custom x and c3.x API
         ids.forEach(function (id) {
             var xKey = $$.getXKey(id);
@@ -2348,7 +2350,6 @@
                 // Expand shapes for selection
                 if (config.point_focus_expand_enabled) { $$.expandCircles(index, null, true); }
                 $$.expandBars(index, null, true);
-
                 // Call event handler
                 $$.main.selectAll('.' + CLASS.shape + '-' + index).each(function (d) {
                     config.data_onmouseover.call($$.api, d);
@@ -2378,7 +2379,6 @@
                 if ($$.isStepType(d) && $$.config.line_step_type === 'step-after' && d3.mouse(this)[0] < $$.x($$.getXValue(d.id, index))) {
                     index -= 1;
                 }
-
                 // Show tooltip
                 selectedData = $$.filterTargetsToShow($$.data.targets).map(function (t) {
                     return $$.addName($$.getValueOnIndex(t.values, index));
@@ -3715,8 +3715,10 @@
           .append("div")
             .attr('class', CLASS.tooltipContainer)
             .style("position", "absolute")
-            .style("pointer-events", "none")
-            .style("display", "none");
+            // .style("pointer-events", "none")
+            .style("display", "none")
+            // .style("opacity", "0")
+            .style("transition", "opacity 1s ease-in-out");
         // Show tooltip if needed
         if (config.tooltip_init_show) {
             if ($$.isTimeSeries() && isString(config.tooltip_init_x)) {
@@ -3758,7 +3760,7 @@
                 text += "<td class='value'>" + value + "</td>";
                 text += "</tr>";
             }
-        }
+                    }
         return text + "</table>";
     };
     c3_chart_internal_fn.tooltipPosition = function (dataToShow, tWidth, tHeight, element) {
@@ -3798,6 +3800,7 @@
         return {top: tooltipTop, left: tooltipLeft};
     };
     c3_chart_internal_fn.showTooltip = function (selectedData, element) {
+        console.log(selectedData);
         var $$ = this, config = $$.config;
         var tWidth, tHeight, position;
         var forArc = $$.hasArcType(),
@@ -3807,7 +3810,8 @@
             return;
         }
         $$.tooltip.html(config.tooltip_contents.call($$, selectedData, $$.axis.getXAxisTickFormat(), $$.getYFormat(forArc), $$.color)).style("display", "block");
-
+        // console.log($$.tooltip.attr('class', 'appear'));
+        console.log('display bruh !');
         // Get tooltip dimensions
         tWidth = $$.tooltip.property('offsetWidth');
         tHeight = $$.tooltip.property('offsetHeight');
@@ -3820,6 +3824,7 @@
     };
     c3_chart_internal_fn.hideTooltip = function () {
         this.tooltip.style("display", "none");
+        // this.tooltip.attr("class", "disapear");
     };
 
     c3_chart_internal_fn.initLegend = function () {

@@ -1,0 +1,116 @@
+
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('fonts/Montserrat/Montserrat-Regular.ttf');
+}
+@font-face {
+    font-family: 'montserrat-bold';
+    src: url('fonts/Montserrat/Montserrat-Bold.ttf');
+}
+h1{
+    font-family: 'montserrat'!important;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+.chart-container{
+    margin-top: 10%;
+}
+
+/*
+
+    TOOLTIP
+
+ */ 
+
+.title{
+    color: white;
+    text-align: center;
+    font-family: 'montserrat-bold';
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.c3-xgrid-focus {
+    display: none;
+}
+
+#chart {
+    margin: 60px 100px 0 30px;
+}
+
+.d3-tip {
+    line-height: 1;
+    font-weight: bold;
+    padding: 5px 12px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 4px;
+    line-height: 15px;
+    font-size: 12px;
+    min-width: 91px;
+    opacity: 1;
+      -webkit-transition: opacity 1s ease-in-out;
+              -moz-transition: opacity 1s ease-in-out;
+              transition: opacity 1s ease-in-out;
+    /*height: 0px;*/
+
+  /* -webkit-transition-timing-function: cubic-bezier(0.680, 0, 0.265, 1);
+   -webkit-transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+      -moz-transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+        -o-transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+           transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); /* easeInOutBack
+           */
+
+         
+}
+
+.appear {
+    opacity: 1!important;
+      -webkit-transition: opacity 1s ease-in-out;
+              -moz-transition: opacity 1s ease-in-out;
+              transition: opacity 1s ease-in-out;
+}
+
+.disapear{
+    opacity: 0;
+     -webkit-transition: opacity 1s ease-in-out;
+              -moz-transition: opacity 1s ease-in-out;
+              transition: opacity 1s ease-in-out;
+}
+
+.d3-tip-show {
+     line-height: 1;
+    font-weight: bold;
+    padding: 5px 12px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 4px;
+    line-height: 15px;
+    font-size: 12px;
+    min-width: 91px;
+    /*height: 160px;*/
+}
+
+.d3-tip .info {
+    // font-size: 11px;
+    // color: #8897b4;
+    transition: all 1s linear;
+    opacity: 1;
+    display: block;
+}
+
+.d3-tip:after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    /*pointer-events: none;*/
+    border-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0.8);
+    border-width: 8px;
+    margin-left: -8px;
+}
